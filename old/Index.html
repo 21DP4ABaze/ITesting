@@ -7,6 +7,8 @@
 </head>
 <body>
     <canvas width="500" height="150" id="canvas"></canvas>
+    <br>
+    <canvas width="500" height="150" id="canvas2"></canvas>
     <script>
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
@@ -14,6 +16,13 @@
         ctx.font = "50px Gill Sans";
         ctx.fillStyle = "black"; // Set text color to white
         ctx.fillText("Home", canvas.width/2-50, canvas.height/2);
+
+        const canvas2 = document.getElementById("canvas2");
+        const ctx2 = canvas2.getContext("2d");
+
+        ctx2.font = "50px Gill Sans";
+        ctx2.fillStyle = "black"; // Set text color to white
+        ctx2.fillText("New Page", canvas.width/2-50, canvas.height/2);
     </script>
 </body>
 </html>
